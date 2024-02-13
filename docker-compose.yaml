@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  user-service:
+    image: userService
+    build: ./UserService
+    ports:
+      - "3001:3001"
+
+  product-service:
+    image: productService
+    build: ./ProductService
+    ports:
+      - "3002:3002"
+
+
